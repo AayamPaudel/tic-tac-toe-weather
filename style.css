@@ -55,6 +55,13 @@ h1{
     border: 1vmin solid var(--button-hover);
 }
 
+#message{
+    height: 45px;
+    /*width: 0;*/
+    overflow: hidden;
+    animation: typewriter 3s steps(40);
+}
+
 #reset{
     padding: 2vmin;
     font-size: 4vmin;
@@ -68,4 +75,10 @@ h1{
     background: transparent;
     border: 3px solid cyan;
     color: var(--button-hover);
+}
+
+@keyframes typewriter{
+    0%{
+        height: 
+    }
 }

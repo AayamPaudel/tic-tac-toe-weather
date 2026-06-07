@@ -76,3 +76,10 @@ function success(position){
     const lon = position.coords.longitude
     getWeather(lat, lon)
 }
+
+function error(){
+    document.getElementById("message").innerText = "Couldn't find your weather! Please allow the location access to continue playing.\n Reload the page to allow location." 
+    a.forEach((a) =>{
+        a.disabled = true
+    })
+}
