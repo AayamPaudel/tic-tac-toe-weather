@@ -1,8 +1,71 @@
 :root{
-    --body-color: #548687;
-    --button: rgb(140, 0, 255);
+    --body: /*#548687*/#2d6a4f;
+    --button: #00fbff;
+    --button-hover: #00ffae;
 }
 
 *{
     margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--body);
+    text-align: center;
+    height: 100dvh;
+}
+
+
+h1{
+    font-size: 8vmin;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.button{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 5vmin;
+    border: 2px solid transparent;
+    font-size: 8vmin;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--button);
+    color: black;
+}
+
+.button:hover{
+    background: transparent;
+    color: cyan;
+    border: 1vmin solid var(--button-hover);
+}
+
+#reset{
+    padding: 2vmin;
+    font-size: 4vmin;
+    border: 2px solid transparent;
+    border-radius: 4vmin;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+#reset:hover{
+    background: transparent;
+    border: 3px solid cyan;
+    color: var(--button-hover);
 }
