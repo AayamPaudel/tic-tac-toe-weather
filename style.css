@@ -1,0 +1,8 @@
+:root{
+    --body-color: #548687;
+    --button: rgb(140, 0, 255);
+}
+
+*{
+    margin: 0;
+}
