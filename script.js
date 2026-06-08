@@ -12,6 +12,8 @@ let Weather = document.getElementById("weather")
 
 let count = 0
 
+let Error = document.getElementById("error")
+
 let arr = [
     [0, 1, 2],
     [3, 4, 5],
@@ -116,14 +118,16 @@ function changeBackground(code) {
     else if ([51, 53, 55, 56, 57].includes(code)) {
         url = "rain.mp4"
         weather = "Rainy"
+        Error.innerText = "Video Unavailable!"
     }
 
-    else if([85,96,99].includes){
+    else if ([85, 96, 99].includes) {
         url = "thunder.mp4"
         weather = "Thunder"
+        Error.innerText = "Video Unavailable!"
     }
 
-    else{
+    else {
         weather = "Couldn't find!"
     }
 

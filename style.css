@@ -96,3 +96,10 @@ h1{
     top: 30vh;
     left: 2vw;
 }
+
+#error{
+    font-weight: bold;
+    position: fixed;
+    top: 35vh;
+    left: 2vw;
+}
