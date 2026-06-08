@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body">
+
+    <video id="video" autoplay muted loop playsinline>
+        <source src="" type="video/mp4" id="source">
+    </video>
+
     <main>
         <h1>
             Tic-Tac-Toe
@@ -19,16 +24,16 @@
         <div class="container">
             <div class="game">
                 <button class="button">
-                    
+                    <img>
                 </button>
                 <button class="button">
-
+                    <img>
                 </button>
                 <button class="button">
-
+                    <img>
                 </button>
                 <button class="button">
-
+                    <img>
                 </button>
                 <button class="button">
 
@@ -49,6 +54,10 @@
         </div>
         <p id="message">
             
+        </p>
+        <p id="weather">
+            Weather:
+            <br>
         </p>
         <button id="reset">
             Reset
