@@ -33,3 +33,44 @@ a.forEach((a) => {
 })
 ```
 This code is the main block containing the logic of the game
+This is improved virsion of tic-tac-toe where it fetches the weather condition of your location and plays videos in the background as per the weather is.
+
+The following is the code which changes the background:
+```javascript
+function changeBackground(code) {
+    let url = ""
+    let weather = ""
+    if (code === 0) {
+        url = "sunny.mp4"
+        weather = "Clear Sky"
+    }
+
+    else if (code >= 1 && code <= 3) {
+        url = "cloudy.mp4"
+        weather = "Cloudy"
+    }
+
+    else if ([45, 48].includes(code)) {
+        url = "fog.mp4"
+        weather = "Foggy"
+    }
+
+    else if ([51, 53, 55, 56, 57].includes(code)) {
+        url = "rain.mp4"
+        weather = "Rainy"
+    }
+
+    else if([85,96,99].includes){
+        url = "thunder.mp4"
+        weather = "Thunder"
+    }
+
+    else{
+        weather = "Couldn't find!"
+    }
+
+    video.style.display = "inline"
+    video.src = url
+    Weather.innerText = `Weather: \n${weather}`
+}
+```
